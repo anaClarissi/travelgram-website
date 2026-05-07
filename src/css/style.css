@@ -98,6 +98,11 @@ body {
 .nav-item form button i {
     font-size: 1.5rem;
     color: var(--text-color-secondary);
+    transition: color .2s ease-in-out;
+}
+
+.nav-item form button:hover .ph-magnifying-glass {
+    color: #EF5F4C;
 }
 
 #search {
@@ -216,4 +221,118 @@ body {
 .footer-list-link:focus {
     color: var(--brand-color);
     text-decoration: underline;
+}
+
+
+
+/* TABLET DESIGN */
+
+@media (min-width: 768px) {
+    
+    /* NAVBAR */
+
+    .navbar-toggler-icon {
+        min-width: 50px;
+        min-height: 50px;
+    }
+
+
+
+    /* MAIN */
+
+    #photo-gallery {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        padding: 2rem;
+    }
+
+
+}
+
+
+
+/* DESKTOP DESIGN */
+
+@media (min-width: 1280px) {
+
+    /* NAVBAR */
+
+    .navbar {
+        padding: 1.25rem 2rem;
+    }
+
+    .navbar .container-fluid{
+        justify-content: space-between !important;
+    }
+
+    #navbarNav {
+        max-width: fit-content;
+    }
+
+    .navbar-nav {
+        gap: 2rem;
+    }
+
+
+
+    /* HEADER */
+
+    #header {
+        flex-direction: row;
+        align-items: center;
+        padding: calc(var(--nav-height) + 3rem) 2.15rem 2rem;
+    }
+
+    #header-main {
+        flex-direction: row;
+        align-items: center;
+        gap: 2rem;
+        flex: 3;
+    }
+
+    #header-profile {
+        width: 176px;
+        height: auto;
+    }
+
+    .profile-name {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+    }
+
+    .profile-about {
+        text-align: left;
+        max-width: 400px;
+    }
+    
+    #header-info {
+        flex: 1;
+    }
+
+
+
+     /* MAIN */
+
+    #photo-gallery {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 3rem;
+        padding: 3rem;
+    }
+
+
+
+    /* FOOTER */
+    #footer div {
+        flex-direction: row;
+        align-items: center;
+        padding: 0 3rem 1rem;
+    }
+
+    .list-unstyled {
+        align-items: center;
+        gap: 2rem;
+        margin: 0;
+    }
+
 }
