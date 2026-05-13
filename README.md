@@ -31,7 +31,7 @@ O site simula uma rede social focada em compartilhamento de fotos e experiência
 
 ## 🚀 Live Preview
 
-🔗 https://anaclarissi.github.io/travelegram-website/
+🔗 https://anaclarissi.github.io/travelgram-website/
 
 ---
 
